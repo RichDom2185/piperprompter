@@ -4,17 +4,17 @@
 
 I made this because I got tired of having to manually edit the output redirect `>` of a command each time. E.g.:
 
-```bash
-fbgrab - > 1.png
-fbgrab - > 2.png
-fbgrab - > 3.png
-fbgrab - > 4.png
+```
+$ fbgrab - > 1.png
+$ fbgrab - > 2.png
+$ fbgrab - > 3.png
+$ fbgrab - > 4.png
 # ...
 ```
 
-Using piperpromter, I can just keep repeating the same command by hitting the arrow key:
+Using piperpromter, I can just keep repeating the same command by hitting the up arrow key in the terminal:
 
-```bash
+```
 $ piperpromter fbgrab -
 Enter filename: 1.png
 Saved to 1.png!
@@ -26,6 +26,8 @@ Enter filename: 3.png
 Saved to 3.png!
 # ...
 ```
+
+This may or may not be useful in scripts, but mainly useful as a time-saver when one needs to repeatedly run the same command again and again.
 
 # Installing
 
